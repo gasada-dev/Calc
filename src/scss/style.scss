@@ -1,3 +1,11 @@
+button {
+    all: unset;
+  }
+
+body{
+    user-select: none;
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -9,6 +17,8 @@
         height: 800px; 
         width: 600px;
         margin-top: 50px;
+        border-bottom: 20px;
+        border-radius: 5%;
 
         &__screen {
             width: 520px;
@@ -35,19 +45,11 @@
                 font-size: 30px;
                 line-height: 4;
                 background-color: red;
+                border-bottom: 20px;
+                border-radius: 10%;
+
             }
             
-            .number{
-                
-            }
-            
-            .operation{
-                
-            }
-            
-            .decimal_point{
-                
-            }
 
             .zero {
                 grid-row-start: 5;
@@ -61,6 +63,8 @@
                 grid-row-end: 6;
                 grid-column-start: 4;
                 grid-column-end: 5;
+
+                line-height: 8;
             }
         }
     }
